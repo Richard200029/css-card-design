@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        /* css box model */
+        /* border */
+        /* padding */
+        /* margin */
+        .card{
+            border: 1px solid  rgb(241, 226, 226);
+            width: 320px;
+            /* space inside the body is padding/* */
+             padding: 10px; 
+             /* space outsidee the body       */
+            margin: 10px;
+            border-radius: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: 200ms;
+
+        }
+        .card:hover{
+            transform: rotate(90deg);
+            border-radius: 22px;
+            background-color: #eee;
+            border: 1px solid #eee;
+        }
+        .card-img{
+            width: 100%;
+            border-radius: 6px;
+
+        }
+        .btn{
+            padding: 12px;
+            color: white;
+            border-radius: 10px;
+            border:none;
+            background-color: black;
+
+
+        }
+        .flexbox{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn:hover{
+            color: rgb(166, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+            <div class="card">
+        <img src="https://source.unsplash.com/1600x900/?salad" class="card-img" alt="">
+        <h3>Salads</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900/?tandoori " class="card-img" alt="">
+        <h3>Tandoori</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900/?burger" class="card-img" alt="">
+        <h3>Burger</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900//?pizza" class="card-img" alt="">
+        <h3>Pizza</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900//?Fries" class="card-img" alt="">
+        <h3>Fries</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900//?dessert" class="card-img" alt="">
+        <h3>Dessert</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque.</p>
+        <button class="btn">Order now</button>
+    </div>
+</div>
+
+</body>
+</html>
